@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>io.zangshayang.finance</groupId>
+	<artifactId>stock</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>stock</name>
+	<description>It provides an interface for query stock prices via REST APIs.</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.6.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+	
+	<dependencies>
+	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>io.zangshayang.finance</groupId>
+			<artifactId>common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.5</version>
+		</dependency>
+
+		<!-- For Testing Only -->	<!-- For Testing Only --> 
+		<!-- For Testing Only -->	<!-- For Testing Only -->
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<!-- <version> parent:: spring.framework.boot manages junit v=4.12 </version> -->
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- For Testing Only -->	<!-- For Testing Only -->
+		<!-- For Testing Only -->	<!-- For Testing Only -->
+
+
+
+
+		<!-- For Logging Only -->	<!-- For Logging Only -->
+		<!-- For Logging Only -->	<!-- For Logging Only -->
+				
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-log4j12</artifactId>
+		    <version>1.7.25</version>
+		    <!-- <version> parent:: spring.framework.boot manages junit v=4.12 </version> -->
+		</dependency>
+		
+		<!-- For Logging Only -->	<!-- For Logging Only -->
+		<!-- For Logging Only -->	<!-- For Logging Only -->
+
+	</dependencies>
+	
+	<build>
+	
+		<plugins>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+			</plugin>
+			
+		</plugins>
+	</build>
+
+</project>
