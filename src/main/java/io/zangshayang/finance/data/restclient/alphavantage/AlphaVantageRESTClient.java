@@ -139,7 +139,7 @@ public class AlphaVantageRESTClient {
 		String json = restCallForJson(ub.build());
 		json = RegexHelper.replace(json, "\\d\\.\\s", "");
 		json = RegexHelper.replace(json, "\\n", "");
-		json = RegexHelper.replace(json, "\\s", "");
+		json = RegexHelper.replace(json, "(\\D)\\s(\\D)", "$1$2"); // take out space between two not-digit char 
 		json = RegexHelper.replace(json, "\\(", "");
 		json = RegexHelper.replace(json, "\\)", "");
 		return json;

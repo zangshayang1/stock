@@ -34,11 +34,18 @@
 			<artifactId>common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-
+		
+        <!-- JPA Data Repositories, Entities, Hibernate -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+		
+		<!-- MySQL Driver -->
 		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>2.8.5</version>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>8.0.12</version>
 		</dependency>
 
 		<!-- For Testing Only -->	<!-- For Testing Only --> 
@@ -49,12 +56,20 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- h2 in memory DB -->
+		<dependency>
+		    <groupId>com.h2database</groupId>
+		    <artifactId>h2</artifactId>
+		    <!-- <h2.version>1.4.197</h2.version> ::spring.framework.boot -->
+		    <scope>test</scope>
+		</dependency>
+
 		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<!-- <version> parent:: spring.framework.boot manages junit v=4.12 </version> -->
+			<!-- <junit.version>4.12</junit.version> ::spring.framework.boot -->
 			<scope>test</scope>
 		</dependency>
 		
@@ -71,8 +86,7 @@
 		<dependency>
 		    <groupId>org.slf4j</groupId>
 		    <artifactId>slf4j-log4j12</artifactId>
-		    <version>1.7.25</version>
-		    <!-- <version> parent:: spring.framework.boot manages junit v=4.12 </version> -->
+		    <!-- <slf4j.version>1.7.25</slf4j.version> ::spring.framework.boot -->
 		</dependency>
 		
 		<!-- For Logging Only -->	<!-- For Logging Only -->
